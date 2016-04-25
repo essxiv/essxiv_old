@@ -1,0 +1,89 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+	margin: 0;
+	overflow-x: hidden;	
+}
+
+#home {
+	background: url(1.jpg);
+	background-size: cover;
+	background-position: 50% 0px;
+	background-repeat: no-repeat;
+	height: 650px;
+}
+
+.home-overlay {
+	background: url(overlay-pattern.png);
+	background-color: rgba(40, 60, 80, 0.3);
+	background-repeat: repeat;
+	height: 650px;
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+}
+
+.intro {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	transform: translate(0%, -50%);
+	padding: 0 15px;
+}
+
+.intro h1 {
+	font-weight: 800;
+	font-size: 50px;
+	color: #fff;
+	text-shadow: 0 2px 6px #111;
+}
+
+.start {
+	font-size: 22px;
+	font-style: normal;
+	text-transform: none;
+	margin: 15px 0;
+	color: #fff;
+	text-shadow: 0 1px 5px #111;
+	border-radius: 20px;
+}
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
+	text-align: center; 
+}
+
+.scroll-down span {
+	position: relative;
+	color: #fff;
+}
+
+#services {
+	padding: 120px 0 100px;
+	background-color: #7CC6FE;
+}
+
+/*This is a custom nav bar css*/
+.navbar-custom {
+	padding: 0;
+	margin: 0;
+}
+
+.col-custom {
+	text-align: center;
+}
+
