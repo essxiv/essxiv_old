@@ -7,7 +7,10 @@
 
 		<div class='start'>Hi, my name is Gregory and i'm a</div>
 
-		<h1 class='wow bounce animated'>Full-Stack Web Developer</h1>
+		<h1>
+			<span class='wow bounce animated' data-wow-delay='.2s'><span style='color:#23C9FF;'>F</span>ull</span>-<span class='wow bounce animated' data-wow-delay='.3s'><span style='color:#82E5A5;'>S</span>tack</span> <span class='wow bounce animated' data-wow-delay='.4s'><span style='color:#F3F78C;'>Dev</span>eloper</span>
+		</h1>
+
 
 		<div class='start'>creating amazing applications.</div>
 
@@ -16,7 +19,7 @@
 	<a href="#">
 		<div class='scroll-down'>
 			<span>
-				<i class='fa fa-angle-down fa-2x'></i>
+				<i class='wow fadeInDown fa fa-angle-down fa-2x intro-i' data-wow-iteration="infinite"></i>
 			</span>
 		</div>
 	</a>
@@ -26,11 +29,11 @@
 
 
 <!-- HEADER -->
-<div id='undefined-sticky-wrapper' class='sticky-wrapper is-sticky'>
+<div id='sticker' class='sticky-wrapper is-sticky'>
 
 	<header class='header'>
 
-		<nav class='navbar navbar-custom' role='navigation'>
+		<nav class='nav' role='navigation'>
 
 			<div class='container'>
 				<div class='navbar-header'>
@@ -72,13 +75,13 @@
 		<div class='row'>
 
 			<div class='col-sm-6 col-sm-offset-3 col-custom'>
-				<div class='wow service-header fadeInDown' data-wow-iteration="infinite">
+				<div class='wow service-header fadeInDown'>
 
-					<h2 class='service-title'>Principles On Point</h2>
+					<h2 class='service-title'>EXPERTISE</h2>
 
 					<div class='half-rule'></div>
 
-					<div class='service-subtitle'>Problem Solving Software Engineer.</div>
+					<div class='service-subtitle'>Using problem solving techniques to create innovative and dynamic software.</div>
 
 				</div>
 
@@ -91,11 +94,11 @@
 			<div class='col-sm-3'>
 				<div class='iconbox wow slideInLeft animated'>
 					<div class='iconbox-icon'>
-						<span class='fa fa-heartbeat'></span>
+						<%= image_tag('ruby.jpg', class: 'ruby-img') %>
 					</div>
 					<div class='iconbox-text'>
-						<h3 class='iconbox-title'>Web Applications</h3>
-						<div class='iconbox-desc'>Best practices for dynamic standards</div>
+						<h3 class='iconbox-title'>Ruby | Rails</h3>
+						<div class='iconbox-desc'>Proficient with Ruby and Rails.</div>
 					</div>
 				</div>
 			</div>
@@ -103,11 +106,11 @@
 			<div class='col-sm-3'>
 				<div class='iconbox wow slideInLeft animated'>
 					<div class='iconbox-icon'>
-						<span class='fa fa-heartbeat'></span>
+						<span class='fa fa-pie-chart'></span>
 					</div>
 					<div class='iconbox-text'>
-						<h3 class='iconbox-title'>Web Applications</h3>
-						<div class='iconbox-desc'>Best practices for dynamic standards</div>
+						<h3 class='iconbox-title'>Quality Assurance</h3>
+						<div class='iconbox-desc'>Testing multiple software platforms.</div>
 					</div>
 				</div>
 			</div>
@@ -115,11 +118,11 @@
 			<div class='col-sm-3'>
 				<div class='iconbox wow slideInLeft animated'>
 					<div class='iconbox-icon'>
-						<span class='fa fa-heartbeat'></span>
+						<span class='fa fa-css3'></span>
 					</div>
 					<div class='iconbox-text'>
-						<h3 class='iconbox-title'>Web Applications</h3>
-						<div class='iconbox-desc'>Best practices for dynamic standards</div>
+						<h3 class='iconbox-title'>Front-End Design</h3>
+						<div class='iconbox-desc'>Specializing UI/UX, CSS, HTML, and JavaScript.</div>
 					</div>
 				</div>
 			</div>
@@ -127,10 +130,10 @@
 			<div class='col-sm-3'>
 				<div class='iconbox wow slideInLeft animated'>
 					<div class='iconbox-icon'>
-						<span class='fa fa-heartbeat'></span>
+						<span class='fa fa-coffee'></span>
 					</div>
 					<div class='iconbox-text'>
-						<h3 class='iconbox-title'>Web Applications</h3>
+						<h3 class='iconbox-title'>Consulting</h3>
 						<div class='iconbox-desc'>Best practices for dynamic standards</div>
 					</div>
 				</div>
@@ -153,10 +156,10 @@
 			<div class='col-sm-6 col-sm-offset-3'>
 				<div class='service-header'>
 					
-					<h2 class='service-title'>My Current Projects</h2>	
+					<h2 class='projects-title'>CURRENT PROJECTS</h2>	
 					<div class='half-rule' style='background-color:black;'></div>
 
-					<div class='service-subtitle'>Designed, Built, Maintained.</div>
+					<div class='projects-subtitle'>Designed, Built, Maintained.</div>
 
 				</div>
 			</div>
@@ -291,7 +294,64 @@
 
 
 
+<!-- SUBMIT MESSAGE -->
+<section id="sub-msg">
+	<div class='container'>
+		<div class='row'>
+			
+			<div class='col-sm-6 col-sm-offset-3'>
+				<div class='service-header'>
+					<h2 class='inq-title'>Inquiries</h2>
+					<div class='inq-subtitle'>
+						Feel free to ask my any questions!
+					</div>
+				</div>
 
+				
+			</div>
+
+		</div>		
+
+	</div>
+</section>
+
+
+<!-- FOOTER -->
+<section id='footer'>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-sm-12'>
+				<ul class='social-links'>
+
+					<li>
+						<a href="" class='wow fadeInUp' data-wow-delay='.4s'>
+							<i class='fa fa-facebook'></i>
+						</a>
+					</li>
+					<li>
+						<a href="" class='wow fadeInUp' data-wow-delay='.3s'>
+							<i class='fa fa-twitter'></i>
+						</a>
+					</li>
+					<li>
+						<a href="" class='wow fadeInUp' data-wow-delay='.2s'>
+							<i class='fa fa-linkedin'></i>
+						</a>
+					</li>
+					<li>
+						<a href="" class='wow fadeInUp' data-wow-delay='.1s'>
+							<i class='fa fa-github'></i>
+						</a>
+					</li>
+				</ul>
+
+				<p class='author'>Gregory Hasenauer</p>
+				<p class='copyright'>Full-Stack Engineer</p>
+					
+			</div>
+		</div>
+	</div>
+</section>
 
 
 

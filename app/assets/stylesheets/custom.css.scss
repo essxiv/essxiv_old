@@ -88,10 +88,15 @@ body {
 }
 
 .intro h1 {
+	display: inline-block;
 	font-weight: 800;
 	font-size: 50px;
 	color: #fff;
 	text-shadow: 0 2px 6px #111;
+}
+
+.intro span {
+	display: inline-block;
 }
 
 .start {
@@ -123,13 +128,41 @@ body {
 	color: #fff;
 }
 
+.intro-i {
+	position: relative;
+	top: 18px;
+}
 
+/*HEADER*/
+.header {
+	background-color: #f5f5f5;
+	width: 100%;
+	z-index: 998;
+	position: relative;
+	border-bottom: 1.5px solid #02D2FC;
+}
 
+.header .navbar-brand {
+	color: #00819C;
+	font-weight: 500;
+	font-family: 'Pacifico', cursive;
+	&:hover {
+		color: #FFFF6F;
+	};
+}
+
+.header .navbar-right li a {
+	color: #00819C;
+	font-family: 'Pacifico', cursive;
+	&:hover {
+		color: #FFFF6F	;
+	};
+}
 
 /*SERVICES SECTION*/
 #services {
 	padding: 120px 0 100px;
-	background-color: rgba(140, 228, 255, 0.58);
+	background-color: #50B0FF;
 }
 
 .service-header {
@@ -140,17 +173,16 @@ body {
 .service-title {
 	font-weight: 700;
 	font-size: 27px;
+	color: white;
+	letter-spacing: 2px;
 }
 
 .service-subtitle {
 	font-size: 19px;
+	color: white;
 }
 
 /*This is a custom nav bar css*/
-.navbar-custom {
-	padding: 0;
-	margin: 0;
-}
 
 .half-rule {
 	width: 100px;
@@ -165,6 +197,7 @@ body {
 	text-align: center;
 	padding: 40px 20px;
 	margin: 0 0 20px;
+	min-height: 250px;
 }
 
 .iconbox-icon {
@@ -178,6 +211,9 @@ body {
 	padding: 0;
 }
 
+.ruby-img {
+	width: 21%;
+}
 
 
 
@@ -185,6 +221,19 @@ body {
 #projects {
 	padding: 120px 0 100px;
 	background-color: white;
+}
+
+.projects-title {
+	font-weight: 700;
+	font-size: 27px;
+	color: blue;
+	letter-spacing: 2px;
+}
+
+.projects-subtitle {
+	font-size: 19px;
+	color: blue;
+	letter-spacing: -1px;
 }
 
 .grid {
@@ -239,6 +288,7 @@ body {
 	max-width: 100%;
 }
 
+
 /*CONTACT DIV*/
 #contact-break {
 	background: url(3.jpg);
@@ -264,11 +314,56 @@ body {
 	color: #fff;
 }
 
-.contact-break-btn > .btn {
+.contact-break-btn .btn {
 	background: white;
 	color: black;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+
+/*SUBMIT MESSAGES FORM*/
+#sub-msg {
+	padding: 120px 0 100px;
+}
+
+/*FOOTER*/
+#footer {
+	background: #222;
+	text-align: center;
+	padding: 40px 0;
+	color: #FFF;
+}
+
+.social-links {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px;
+}
+
+.social-links li {
+	display: inline-block;
+	margin: 5px;
+}
+
+.social-links a {
+	width: 36px;
+	height: 36px;
+	display: block;
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 3px;
+	font-size: 14px;
+	color: white;
+}
+
+.author {
+	margin: 0 0 10px;
+}
+
+.copyright {
+	margin: 0;
 }
 
 
