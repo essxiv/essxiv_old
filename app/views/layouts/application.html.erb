@@ -8,28 +8,55 @@
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
 
-
+	  <!-- ANIMATE CSS -->
 	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+
+	  <!-- STICKY JS -->
 	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js">
+	 
+	  <!-- FONTS -->
 	  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+	  <!-- SKROLLER -->
+	  <link rel="stylesheet" type="text/css" href="
+https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js">
+
 
 
 	</head>
 
 	<body>
 
+		<%= render 'layouts/header' %>
+
 		<%= yield %>
 
 	</body>
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script><script>new WOW().init();</script>
+	<!-- SCRIPTS -->
+	
+	<!-- WOW JS -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+	<script>new WOW().init();</script>
+
+	<!-- STICKY JS -->
 	<script src="jquery.sticky.js"></script>
 	<script>
 	  $(document).ready(function(){
 	    $("#sticker").sticky({topSpacing:0});
 	  });
 	</script>
+
+	<!-- PARALLAX -->
+	<script src="/assets/javascripts/parallax.js"></script>
+
+	<!-- SKROLLER -->
+	<script type="text/javascript">
+    var s = skrollr.init();
+    </script>
+
+
 
 
 </html>

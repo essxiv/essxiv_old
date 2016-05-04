@@ -4,11 +4,16 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 
+# CSS
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
+gem 'parallax-rails', '~> 1.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Mailer Gems
+gem 'mail_form'
+gem 'simple_form'
+
+# Use sqlite3 as the database for Active Recor
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -51,8 +56,8 @@ group :development do
 end
 
 group :production do
-	gem 'sqlite3'
 	gem 'puma'
+	gem 'sqlite3'
 end
 
 
