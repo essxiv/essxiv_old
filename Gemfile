@@ -56,8 +56,7 @@ group :development do
 end
 
 group :production do
-	gem 'puma'
-	gem 'sqlite3'
+	gem 'pg'
 end
 
 
