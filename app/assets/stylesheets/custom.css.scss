@@ -55,15 +55,12 @@ body {
 }
 
 
-
-
-
-
 #home {
 	background: url(1.jpg);
 	background-size: cover;
 	background-position: 50% 0px;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	height: 650px;
 }
 
@@ -161,8 +158,9 @@ body {
 
 /*SERVICES SECTION*/
 #services {
+	background-image: linear-gradient(-25deg,#3DBDEE -20%,#D7A0F5 100%);
+	background-attachment: fixed;
 	padding: 120px 0 100px;
-	background-color: #50B0FF;
 }
 
 .service-header {
@@ -285,19 +283,31 @@ body {
 .figure-image {
 	position: relative;
 	display: block;
-	min-height: 100%;
+	min-height: 220px;
 	max-width: 100%;
+}
+
+/*FIXED PICTURE BREAK*/
+#background-fixed-pic {
+	background-image: url(20.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 320px;
+	border-top: 3px solid black;
+
 }
 
 
 /*CONTACT DIV*/
 #contact-break {
-	background: url(3.jpg);
+	background: url(25.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 50px 0;
-	border-top: 3px solid black;
+	background-attachment: fixed;
+	height: 320px;
 	border-bottom: 3px solid black;
+	border-top: 3px solid black;
 }
 
 #contact-break * {
@@ -483,3 +493,34 @@ figure.effect-layla:hover img {
 /*---------------*/
 /***** Layla *****/
 /*---------------*/
+
+
+
+
+
+
+/* HEADER */
+
+
+/*.background1 {
+	background-image: url(1.jpg);
+	width: 100vh;
+	height: 100vh;
+	background-attachment: fixed;
+
+}
+
+.background2 {
+	background-image: url(2.jpg);
+	width: 100vh;
+	height: 100vh;
+	background-attachment: fixed;
+
+}
+
+.background3 {
+	background-image: url(3.jpg);
+	width: 100vh;
+	height: 100vh;
+	background-attachment: fixed;
+}*/

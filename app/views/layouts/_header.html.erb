@@ -45,5 +45,50 @@
 
 <div class="parallax-window" data-parallax="scroll" data-image-src="2.jpg"></div> -->
 
+<!-- 
+<div class='background1'></div>
+<div class='background2'></div>
+<div class='background3'></div> -->
 
-<div data-0="background-color:rgb(0,0,255);transform:rotate(0deg);" data-500="background-color:rgb(255,0,0);transform:rotate(360deg);">WOOOT</div>
+<%= form_for @message do |f| %>
+            <% if @message.errors.any? %>
+
+              <div id='error_explanation'>
+                <h2>
+                  <%= "#{pluralize(@message.errors.count, "error")} prohibited this message from being sent: " %>
+                </h2>
+
+                <ul>
+                  <% @message.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                  <% end %>
+                </ul>
+              </div>
+
+            <% end %>
+
+            <div class='form-control'>
+              <%= f.label :name %>
+              <%= f.text_field :name %>
+            </div>
+
+            <div class='form-control'>
+              <%= f.label :email %>
+              <%= f.text_field :email %>
+            </div>
+
+            <div class='form-control'>
+              <%= f.label :subject %>
+              <%= f.text_field :subject %>
+            </div>
+
+            <div class='form-control'>
+              <%= f.label :content %>
+              <%= f.text_field :content %>
+            </div>
+
+            <div class="actions">
+              <%= f.submit 'Send', class: 'button' %>
+            </div>
+
+          <% end %>
