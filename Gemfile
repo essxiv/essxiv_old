@@ -8,7 +8,7 @@ gem 'actionmailer', '~> 4.2', '>= 4.2.6'
 # CSS
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
-gem 'parallax-rails', '~> 1.0'
+#gem 'parallax-rails', '~> 1.0'
 
 # Mailer Gems
 gem 'mail_form'
