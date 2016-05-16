@@ -214,8 +214,6 @@ body {
 	width: 21%;
 }
 
-
-
 /*PROJECTS SECTION*/
 #projects {
 	padding: 120px 0 100px;
@@ -295,7 +293,6 @@ body {
 	background-size: cover;
 	height: 320px;
 	border-top: 3px solid black;
-
 }
 
 
@@ -307,7 +304,6 @@ body {
 	background-attachment: fixed;
 	height: 320px;
 	border-bottom: 3px solid black;
-	border-top: 3px solid black;
 }
 
 #contact-info {
@@ -341,10 +337,9 @@ body {
 	color: #fff;
 }
 
-.contact-break-btn .btn {
-	background: white;
-	color: black;
-	margin-top: 5px;
+.resume-btn {
+	border-color: black;
+	margin-top: 20px;
 	margin-bottom: 5px;
 }
 
