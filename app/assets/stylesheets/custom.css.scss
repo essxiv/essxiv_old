@@ -77,7 +77,7 @@ body {
 .intro {
 	position: absolute;
 	width: 100%;
-	top: 38%;
+	top: 44%;
 	left: 0;
 	text-align: center;
 	transform: translate(0%, -50%);
@@ -109,7 +109,7 @@ body {
 .scroll-down {
 	position: absolute;
 	left: 50%;
-	bottom: 23%;
+	bottom: 10%;
 	border: 2px solid #fff;
 	border-radius: 50%;
 	height: 50px;
@@ -308,6 +308,11 @@ body {
 	height: 320px;
 	border-bottom: 3px solid black;
 	border-top: 3px solid black;
+}
+
+#contact-info {
+	text-align: center;
+	padding: 35px;
 }
 
 #contact-break * {
